@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Наська Тащит</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container header__container">
+        <a href="#" class="logo">
+            <img src="./assets/images/logo.png" alt="Логотип">
+        </a>
+        <div class="burger" id="burger">
+            <svg width="26" height="30" viewBox="0 0 26 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 5.625C0 4.58789 0.829911 3.75 1.85714 3.75H24.1429C25.1701 3.75 26 4.58789 26 5.625C26 6.66211 25.1701 7.5 24.1429 7.5H1.85714C0.829911 7.5 0 6.66211 0 5.625ZM0 15C0 13.9629 0.829911 13.125 1.85714 13.125H24.1429C25.1701 13.125 26 13.9629 26 15C26 16.0371 25.1701 16.875 24.1429 16.875H1.85714C0.829911 16.875 0 16.0371 0 15ZM26 24.375C26 25.4121 25.1701 26.25 24.1429 26.25H1.85714C0.829911 26.25 0 25.4121 0 24.375C0 23.3379 0.829911 22.5 1.85714 22.5H24.1429C25.1701 22.5 26 23.3379 26 24.375Z"
+                      fill="white"/>
+            </svg>
+        </div>
+        <nav class="menu " id="menu">
+            <div class="menu__close" id="close">
+                <svg width="23" height="31" viewBox="0 0 23 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.5202 9.11835C21.2689 8.36152 21.2689 7.13242 20.5202 6.37558C19.7716 5.61874 18.5557 5.61874 17.807 6.37558L11.4999 12.7572L5.18691 6.38163C4.43822 5.6248 3.22233 5.6248 2.47363 6.38163C1.72493 7.13847 1.72493 8.36757 2.47363 9.12441L8.78665 15.5L2.47962 21.8816C1.73092 22.6385 1.73092 23.8676 2.47962 24.6244C3.22832 25.3812 4.44421 25.3812 5.1929 24.6244L11.4999 18.2428L17.813 24.6184C18.5617 25.3752 19.7775 25.3752 20.5262 24.6184C21.2749 23.8615 21.2749 22.6324 20.5262 21.8756L14.2132 15.5L20.5202 9.11835Z"
+                          fill="white"/>
+                </svg>
+            </div>
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="#about">о стримере</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#shop">магазин чата</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#commands">команды чата</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main class="main">
+    <div class="burger-background"></div>
+    <div class="container main__container">
+        <article class="socials">
+            <div class="social">
+                <a href="https://www.youtube.com/@Naska_tashcit" target="_blank">
+                    <svg width="29" height="21" viewBox="0 0 29 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_419_436)">
+                            <path d="M28.3947 3.28672C28.0602 1.99063 27.078 0.973437 25.8303 0.628906C23.5685 0 14.5 0 14.5 0C14.5 0 5.43153 0 3.16972 0.628906C1.92201 0.973437 0.939766 1.99063 0.605273 3.28672C0 5.63281 0 10.5219 0 10.5219C0 10.5219 0 15.4109 0.605273 17.757C0.939766 19.0531 1.92201 20.0266 3.16972 20.3711C5.43153 21 14.5 21 14.5 21C14.5 21 23.5685 21 25.8303 20.3711C27.078 20.0266 28.0602 19.0477 28.3947 17.757C29 15.4109 29 10.5219 29 10.5219C29 10.5219 29 5.63281 28.3947 3.28672ZM11.5374 14.9625V6.08125L19.1139 10.5219L11.5374 14.9625Z"
+                            />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_419_436">
+                                <rect width="29" height="21" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+                <a href="https://t.me/cos_po" target="_blank">
+                    <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 1C7.26613 1 1 7.04234 1 14.5C1 21.9577 7.26613 28 15 28C22.7339 28 29 21.9577 29 14.5C29 7.04234 22.7339 1 15 1ZM21.4919 10.1833C21.2831 12.3171 20.3685 17.4994 19.9056 19.8891C19.7081 20.9016 19.3242 21.2391 18.9516 21.2718C18.1387 21.3425 17.5234 20.7546 16.7331 20.2538C15.5024 19.4754 14.8024 18.9909 13.6113 18.2288C12.2282 17.3524 13.1258 16.8679 13.9105 16.0786C14.1194 15.8718 17.6984 12.7308 17.7661 12.4478C17.7774 12.4097 17.7831 12.279 17.6984 12.2083C17.6137 12.1375 17.4952 12.1647 17.4105 12.181C17.2863 12.2065 15.318 13.4603 11.5056 15.9425C10.9487 16.3127 10.4425 16.4923 9.9871 16.4815C9.48468 16.4706 8.525 16.2093 7.80806 15.9861C6.93306 15.7139 6.23306 15.5669 6.29516 15.0988C6.32527 14.8556 6.67339 14.6071 7.33952 14.353C11.4191 12.6401 14.1401 11.5097 15.5024 10.9617C19.3919 9.40484 20.1992 9.13266 20.7242 9.12177C20.8427 9.12177 21.0968 9.14899 21.2661 9.27964C21.3767 9.37334 21.4471 9.50335 21.4637 9.64436C21.4942 9.82238 21.5037 10.0032 21.4919 10.1833Z"/>
+                    </svg>
+                </a>
+                <a href="https://www.twitch.tv/naska_tashcit" target="_blank">
+                    <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.1578 5.8623H19.9658V12.0758H22.1521L22.1578 5.8623ZM16.1426 5.83398H13.9562V12.0531H16.1426V5.83398ZM6.84216 0L1.37634 5.17695V23.823H7.93533V29L13.4011 23.823H17.7795L27.6236 14.5V0H6.84216ZM25.4373 13.4691L21.0646 17.6096H16.6863L12.8574 21.2346V17.6096H7.93533V2.07305H25.4373V13.4691Z"
+                        />
+                    </svg>
+                </a>
+            </div>
+        </article>
+        <section class="info">
+            <div class="info__desc">
+                <div class="info__title">
+                    Привет!
+                </div>
+                <div class="info__text">
+                    Это я, Настя :)
+                </div>
+                <div class="info__text">
+                    Эта страница предназначена для ознакомления с
+                    <a class="info__link link-common" href="#commands">
+                        командами чата
+                    </a>
+                </div>
+            </div>
+            <div class="info__img">
+                <img src="./assets/images/info.png" alt="Моё фото">
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="about__title title">О стримере</div>
+            <div class="about-content">
+                <div class="about__desc">Тоже самое, что и на твиче..</div>
+                <div class="about__text">
+                    Меня зовут Анастасия, я очень застенчивая.
+                </div>
+                <ul class="about__text">
+                    <li class="about__text-item">♥ есть два милых котика</li>
+                    <ul class="about__text_items">
+                        <li class="about__text-item about__text_sublist">• Ниичка - кошка</li>
+                        <li class="about__text-item about__text_sublist">• Бро - кот</li>
+                    </ul>
+                    <li class="about__text-item">♥ я замужем, мужа зовут
+                        <a href="https://www.twitch.tv/neammo" target="_blank" class="link-common">Даниил</a>
+                    </li>
+                </ul>
+                <ul class="about__text">
+                    <li class="about__text-item">◽ хрупкое телосложение 500кг костей</li>
+                    <li class="about__text-item">◽ люблю снег, зиму</li>
+                    <li class="about__text-item">◽ занимаюсь frontend-разработкой (тяжко дается, но мне нравится)</li>
+                    <li class="about__text-item">◽ стримлю в основном overwatch2, прохожу ведьмака3</li>
+                    <li class="about__text-item">◽ играю так себе, но стараюсь</li>
+                    <li class="about__text-item">◽ умею играть на фортепиано, но не прям вау</li>
+                    <li class="about__text-item">◽ иногда залетаю в страшилки, но очень пугаюсь</li>
+                </ul>
+                <div class="about__img">
+                    <img class="about__img_2" src="./assets/images/nia2.png" alt="Ниичка">
+                    <img class="about__img_4" src="./assets/images/bro2.png" alt="Бро">
+                    <img class="about__img_3" src="./assets/images/bro1.png" alt="Бро">
+                    <img class="about__img_1" src="./assets/images/nia1.png" alt="Ниичка">
+                </div>
+            </div>
+        </section>
+        <section class="commands" id="commands">
+            <div class="commands__title title">
+                команды чата
+            </div>
+            <div class="commands__desc">
+                <div class="commands__text">
+                    <span class="commands__text_title">Бук</span> - валюта. Работает как баллы канала.
+                </div>
+                <ul class="commands__list">
+                    <li class="commands__item">• Копится за просмотр</li>
+                    <li class="commands__item">• Активистам приходит побольше</li>
+                </ul>
+            </div>
+            <div class="commands__block">
+                <div class="commands__command-text">
+                    <span class="commands__text-title">
+                        !duel &lt;ник_соперника&gt; &lt;число бук&gt;
+                        <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_514_5)">
+                            <path d="M12 10.5H6C5.725 10.5 5.5 10.275 5.5 10V2C5.5 1.725 5.725 1.5 6 1.5H10.3781L12.5 3.62188V10C12.5 10.275 12.275 10.5 12 10.5ZM6 12H12C13.1031 12 14 11.1031 14 10V3.62188C14 3.225 13.8406 2.84375 13.5594 2.5625L11.4406 0.440625C11.1594 0.159375 10.7781 0 10.3813 0H6C4.89688 0 4 0.896875 4 2V10C4 11.1031 4.89688 12 6 12ZM2 4C0.896875 4 0 4.89688 0 6V14C0 15.1031 0.896875 16 2 16H8C9.10312 16 10 15.1031 10 14V13H8.5V14C8.5 14.275 8.275 14.5 8 14.5H2C1.725 14.5 1.5 14.275 1.5 14V6C1.5 5.725 1.725 5.5 2 5.5H3V4H2Z"
+                                  fill="white"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_514_5">
+                                <rect width="14" height="16" fill="white"/>
+                                </clipPath>
+                                </defs>
+                        </svg>
+                    </span>
+                    <span class="commands__command-text_desc">
+                         - зрители могут соревноваться друг с другом за бук
+                    </span>
+                </div>
+                <div class="commands__command-text">
+                    <span class="commands__text-title">
+                        !cancel
+                        <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_514_5)">
+                            <path d="M12 10.5H6C5.725 10.5 5.5 10.275 5.5 10V2C5.5 1.725 5.725 1.5 6 1.5H10.3781L12.5 3.62188V10C12.5 10.275 12.275 10.5 12 10.5ZM6 12H12C13.1031 12 14 11.1031 14 10V3.62188C14 3.225 13.8406 2.84375 13.5594 2.5625L11.4406 0.440625C11.1594 0.159375 10.7781 0 10.3813 0H6C4.89688 0 4 0.896875 4 2V10C4 11.1031 4.89688 12 6 12ZM2 4C0.896875 4 0 4.89688 0 6V14C0 15.1031 0.896875 16 2 16H8C9.10312 16 10 15.1031 10 14V13H8.5V14C8.5 14.275 8.275 14.5 8 14.5H2C1.725 14.5 1.5 14.275 1.5 14V6C1.5 5.725 1.725 5.5 2 5.5H3V4H2Z"
+                                  fill="white"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_514_5">
+                                <rect width="14" height="16" fill="white"/>
+                                </clipPath>
+                                </defs>
+                        </svg>
+                    </span>
+                    <span class="commands__command-text_desc">
+                         - отменяет начатую дуэль
+                    </span>
+                </div>
+                <div class="commands__command-text">
+                    <span class="commands__text-title">
+                        !points
+                        <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_514_5)">
+                            <path d="M12 10.5H6C5.725 10.5 5.5 10.275 5.5 10V2C5.5 1.725 5.725 1.5 6 1.5H10.3781L12.5 3.62188V10C12.5 10.275 12.275 10.5 12 10.5ZM6 12H12C13.1031 12 14 11.1031 14 10V3.62188C14 3.225 13.8406 2.84375 13.5594 2.5625L11.4406 0.440625C11.1594 0.159375 10.7781 0 10.3813 0H6C4.89688 0 4 0.896875 4 2V10C4 11.1031 4.89688 12 6 12ZM2 4C0.896875 4 0 4.89688 0 6V14C0 15.1031 0.896875 16 2 16H8C9.10312 16 10 15.1031 10 14V13H8.5V14C8.5 14.275 8.275 14.5 8 14.5H2C1.725 14.5 1.5 14.275 1.5 14V6C1.5 5.725 1.725 5.5 2 5.5H3V4H2Z"
+                                  fill="white"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_514_5">
+                                <rect width="14" height="16" fill="white"/>
+                                </clipPath>
+                                </defs>
+                        </svg>
+                    </span>
+                    <span class="commands__command-text_desc">
+                         - отображает количество бук
+                    </span>
+                </div>
+                <div class="commands__command-text">
+                    <span class="commands__text-title">
+                        !top
+                        <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_514_5)">
+                            <path d="M12 10.5H6C5.725 10.5 5.5 10.275 5.5 10V2C5.5 1.725 5.725 1.5 6 1.5H10.3781L12.5 3.62188V10C12.5 10.275 12.275 10.5 12 10.5ZM6 12H12C13.1031 12 14 11.1031 14 10V3.62188C14 3.225 13.8406 2.84375 13.5594 2.5625L11.4406 0.440625C11.1594 0.159375 10.7781 0 10.3813 0H6C4.89688 0 4 0.896875 4 2V10C4 11.1031 4.89688 12 6 12ZM2 4C0.896875 4 0 4.89688 0 6V14C0 15.1031 0.896875 16 2 16H8C9.10312 16 10 15.1031 10 14V13H8.5V14C8.5 14.275 8.275 14.5 8 14.5H2C1.725 14.5 1.5 14.275 1.5 14V6C1.5 5.725 1.725 5.5 2 5.5H3V4H2Z"
+                                  fill="white"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_514_5">
+                                <rect width="14" height="16" fill="white"/>
+                                </clipPath>
+                                </defs>
+                        </svg>
+                    </span>
+                    <span class="commands__command-text_desc">
+                         - у кого больше бук
+                    </span>
+                </div>
+            </div>
+            <div class="commands__block">
+                <div class="commands__command-text">
+                    <span class="commands__text-title">
+                        !dice
+                        <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_514_5)">
+                            <path d="M12 10.5H6C5.725 10.5 5.5 10.275 5.5 10V2C5.5 1.725 5.725 1.5 6 1.5H10.3781L12.5 3.62188V10C12.5 10.275 12.275 10.5 12 10.5ZM6 12H12C13.1031 12 14 11.1031 14 10V3.62188C14 3.225 13.8406 2.84375 13.5594 2.5625L11.4406 0.440625C11.1594 0.159375 10.7781 0 10.3813 0H6C4.89688 0 4 0.896875 4 2V10C4 11.1031 4.89688 12 6 12ZM2 4C0.896875 4 0 4.89688 0 6V14C0 15.1031 0.896875 16 2 16H8C9.10312 16 10 15.1031 10 14V13H8.5V14C8.5 14.275 8.275 14.5 8 14.5H2C1.725 14.5 1.5 14.275 1.5 14V6C1.5 5.725 1.725 5.5 2 5.5H3V4H2Z"
+                                  fill="white"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_514_5">
+                                <rect width="14" height="16" fill="white"/>
+                                </clipPath>
+                                </defs>
+                        </svg>
+                    </span>
+                    <span class="commands__command-text_desc">
+                         - бросить кубик
+                    </span>
+                </div>
+                <div class="commands__command-text">
+                    <span class="commands__text-title">
+                        !roulette
+                        <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_514_5)">
+                            <path d="M12 10.5H6C5.725 10.5 5.5 10.275 5.5 10V2C5.5 1.725 5.725 1.5 6 1.5H10.3781L12.5 3.62188V10C12.5 10.275 12.275 10.5 12 10.5ZM6 12H12C13.1031 12 14 11.1031 14 10V3.62188C14 3.225 13.8406 2.84375 13.5594 2.5625L11.4406 0.440625C11.1594 0.159375 10.7781 0 10.3813 0H6C4.89688 0 4 0.896875 4 2V10C4 11.1031 4.89688 12 6 12ZM2 4C0.896875 4 0 4.89688 0 6V14C0 15.1031 0.896875 16 2 16H8C9.10312 16 10 15.1031 10 14V13H8.5V14C8.5 14.275 8.275 14.5 8 14.5H2C1.725 14.5 1.5 14.275 1.5 14V6C1.5 5.725 1.725 5.5 2 5.5H3V4H2Z"
+                                  fill="white"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_514_5">
+                                <rect width="14" height="16" fill="white"/>
+                                </clipPath>
+                                </defs>
+                        </svg>
+                    </span>
+                    <span class="commands__command-text_desc">
+                         - Игра "Русская рулетка"
+                    </span>
+                </div>
+                <div class="commands__command-text">
+                    <span class="commands__text-title">
+                        !request &lt;ссылка ютуб&gt;
+                        <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_514_5)">
+                            <path d="M12 10.5H6C5.725 10.5 5.5 10.275 5.5 10V2C5.5 1.725 5.725 1.5 6 1.5H10.3781L12.5 3.62188V10C12.5 10.275 12.275 10.5 12 10.5ZM6 12H12C13.1031 12 14 11.1031 14 10V3.62188C14 3.225 13.8406 2.84375 13.5594 2.5625L11.4406 0.440625C11.1594 0.159375 10.7781 0 10.3813 0H6C4.89688 0 4 0.896875 4 2V10C4 11.1031 4.89688 12 6 12ZM2 4C0.896875 4 0 4.89688 0 6V14C0 15.1031 0.896875 16 2 16H8C9.10312 16 10 15.1031 10 14V13H8.5V14C8.5 14.275 8.275 14.5 8 14.5H2C1.725 14.5 1.5 14.275 1.5 14V6C1.5 5.725 1.725 5.5 2 5.5H3V4H2Z"
+                                  fill="white"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_514_5">
+                                <rect width="14" height="16" fill="white"/>
+                                </clipPath>
+                                </defs>
+                        </svg>
+                    </span>
+                    <span class="commands__command-text_desc">
+                         - трек, клип
+                    </span>
+                </div>
+                <div class="commands__command-text">
+                    <span class="commands__text-title">
+                        !8ball
+                        <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_514_5)">
+                            <path d="M12 10.5H6C5.725 10.5 5.5 10.275 5.5 10V2C5.5 1.725 5.725 1.5 6 1.5H10.3781L12.5 3.62188V10C12.5 10.275 12.275 10.5 12 10.5ZM6 12H12C13.1031 12 14 11.1031 14 10V3.62188C14 3.225 13.8406 2.84375 13.5594 2.5625L11.4406 0.440625C11.1594 0.159375 10.7781 0 10.3813 0H6C4.89688 0 4 0.896875 4 2V10C4 11.1031 4.89688 12 6 12ZM2 4C0.896875 4 0 4.89688 0 6V14C0 15.1031 0.896875 16 2 16H8C9.10312 16 10 15.1031 10 14V13H8.5V14C8.5 14.275 8.275 14.5 8 14.5H2C1.725 14.5 1.5 14.275 1.5 14V6C1.5 5.725 1.725 5.5 2 5.5H3V4H2Z"
+                                  fill="white"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_514_5">
+                                <rect width="14" height="16" fill="white"/>
+                                </clipPath>
+                                </defs>
+                        </svg>
+                    </span>
+                    <span class="commands__command-text_desc">
+                         - предсказывалка (ответы по типу "да", "нет")
+                    </span>
+                </div>
+            </div>
+        </section>
+        <section class="shop" id="shop">
+            <div class="shop__title title">
+                магазин чата
+            </div>
+            <div class="shop__cards" id="cards">
+                <!--<div class="shop__card">
+                    <div class="shop__card_img" style="background-image: url('assets/images/shop/sound_purring.gif')"></div>
+                    <div class="shop__card_title">Звук (мурчание)</div>
+                    <div class="shop__card_price">500 бук</div>
+                    <div class="shop__card_copy">
+                        <div class="shop__card_copy_text">!redeem мурк</div>
+                        <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_503_180)">
+                                <path d="M12 10.5H6C5.725 10.5 5.5 10.275 5.5 10V2C5.5 1.725 5.725 1.5 6 1.5H10.3781L12.5 3.62188V10C12.5 10.275 12.275 10.5 12 10.5ZM6 12H12C13.1031 12 14 11.1031 14 10V3.62188C14 3.225 13.8406 2.84375 13.5594 2.5625L11.4406 0.440625C11.1594 0.159375 10.7781 0 10.3813 0H6C4.89687 0 4 0.896875 4 2V10C4 11.1031 4.89687 12 6 12ZM2 4C0.896875 4 0 4.89687 0 6V14C0 15.1031 0.896875 16 2 16H8C9.10312 16 10 15.1031 10 14V13H8.5V14C8.5 14.275 8.275 14.5 8 14.5H2C1.725 14.5 1.5 14.275 1.5 14V6C1.5 5.725 1.725 5.5 2 5.5H3V4H2Z"
+                                      fill="white"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_503_180">
+                                    <rect width="14" height="16" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>-->
+            </div>
+        </section>
+    </div>
+</main>
+<footer class="footer">
+    <div class="container footer__container">
+        <a href="#" class="logo">
+            <img src="./assets/images/logo.png" alt="Логотип">
+        </a>
+        <nav class="menu footer__menu">
+            <ul class="menu__list footer__menu__list">
+                <li class="menu__item footer__menu__item">
+                    <a href="#about">о стримере</a>
+                </li>
+                <li class="menu__item footer__menu__item">
+                    <a href="#shop">магазин чата</a>
+                </li>
+                <li class="menu__item footer__menu__item">
+                    <a href="#commands">команды чата</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="footer__social">
+            <a href="https://t.me/cos_po" target="_blank">
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_429_5)">
+                        <path d="M9.5 0.296875C4.25202 0.296875 0 4.41602 0 9.5C0 14.584 4.25202 18.7031 9.5 18.7031C14.748 18.7031 19 14.584 19 9.5C19 4.41602 14.748 0.296875 9.5 0.296875ZM13.9052 6.55723C13.7635 8.01191 13.1429 11.5447 12.8288 13.1738C12.6948 13.8641 12.4343 14.0941 12.1815 14.1164C11.6298 14.1646 11.2123 13.7639 10.676 13.4225C9.84093 12.8918 9.36593 12.5615 8.55766 12.042C7.61915 11.4445 8.22823 11.1143 8.76069 10.5762C8.90242 10.4352 11.331 8.29395 11.377 8.10098C11.3847 8.075 11.3885 7.98594 11.331 7.9377C11.2736 7.88945 11.1931 7.90801 11.1357 7.91914C11.0514 7.93646 9.71579 8.79121 7.12883 10.4834C6.75087 10.7357 6.40739 10.8582 6.09839 10.8508C5.75746 10.8434 5.10625 10.6652 4.61976 10.5131C4.02601 10.3275 3.55101 10.2273 3.59315 9.9082C3.61358 9.74245 3.8498 9.57298 4.30181 9.39981C7.07009 8.2321 8.91646 7.46146 9.84093 7.08789C12.4802 6.02656 13.028 5.84102 13.3843 5.83359C13.4647 5.83359 13.6371 5.85215 13.752 5.94121C13.827 6.00509 13.8748 6.09372 13.8861 6.18984C13.9068 6.31121 13.9132 6.43446 13.9052 6.55723Z"
+                              fill="#EAEAEA"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_429_5">
+                            <rect width="19" height="19" fill="white"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+            </a>
+            <a href="https://www.youtube.com/@Naska_tashcit" target="_blank">
+                <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_429_7)">
+                        <path d="M25.4573 2.9737C25.1575 1.80104 24.2768 0.880729 23.1582 0.56901C21.1304 0 13 0 13 0C13 0 4.86965 0 2.84182 0.56901C1.72318 0.880729 0.842549 1.80104 0.542658 2.9737C0 5.09635 0 9.51979 0 9.51979C0 9.51979 0 13.9432 0.542658 16.0659C0.842549 17.2385 1.72318 18.1193 2.84182 18.431C4.86965 19 13 19 13 19C13 19 21.1304 19 23.1582 18.431C24.2768 18.1193 25.1575 17.2336 25.4573 16.0659C26 13.9432 26 9.51979 26 9.51979C26 9.51979 26 5.09635 25.4573 2.9737ZM10.3438 13.5375V5.50208L17.1366 9.51979L10.3438 13.5375Z"
+                              fill="#EAEAEA"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_429_7">
+                            <rect width="26" height="19" fill="white"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+            </a>
+            <a href="https://www.twitch.tv/naska_tashcit" target="_blank">
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_429_3)">
+                        <path d="M14.5172 3.84082H13.081V7.91172H14.5135L14.5172 3.84082ZM10.5761 3.82227H9.14373V7.89687H10.5761V3.82227ZM4.48279 0L0.901733 3.3918V15.6082H5.199V19L8.78005 15.6082H11.6486L18.0982 9.5V0H4.48279ZM16.6658 8.82461L13.801 11.5373H10.9324L8.4238 13.9123V11.5373H5.199V1.3582H16.6658V8.82461Z"
+                              fill="#EAEAEA"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_429_3">
+                            <rect width="19" height="19" fill="white"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+            </a>
+        </div>
+    </div>
+</footer>
+<div class="success" id="success">
+    <div class="success__text">скопировано</div>
+    <svg width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_551_14)">
+            <path d="M14.6852 3.49963C15.1037 3.91467 15.1037 4.5887 14.6852 5.00374L6.11379 13.5037C5.69526 13.9188 5.01557 13.9188 4.59705 13.5037L0.311332 9.25374C-0.107195 8.8387 -0.107195 8.16467 0.311332 7.74963C0.729858 7.33459 1.40955 7.33459 1.82807 7.74963L5.35709 11.2459L13.1718 3.49963C13.5903 3.08459 14.27 3.08459 14.6886 3.49963H14.6852Z" fill="#3E3E3E"/>
+        </g>
+        <defs>
+            <clipPath id="clip0_551_14">
+                <rect width="15" height="17" fill="white"/>
+            </clipPath>
+        </defs>
+    </svg>
+</div>
+
+<script src="./script.js"></script>
+<script src="./showShop.js"></script>
+</body>
+</html>
